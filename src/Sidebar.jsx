@@ -1,7 +1,7 @@
 import React from 'react'
 import 
-{BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, 
-  BsListCheck, BsMenuButtonWideFill,BsQuestionCircleFill ,BsCalendarFill, BsFillGearFill}
+{BsCart3, BsGrid1X2Fill, BsCardText, BsPeopleFill, 
+  BsListCheck, BsMenuButtonWideFill,BsQuestionCircleFill,BsBuilding, BsFileText  ,BsCalendarFill, BsFillGearFill}
  from 'react-icons/bs'
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
@@ -9,7 +9,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
-                <BsCart3  className='icon_header'/> SHOP
+                <BsBuilding  className='icon_header'/>Idris  Company
             </div>
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
@@ -22,17 +22,17 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
             </li>
             <li className='sidebar-list-item'>
                 <a href="">
-                    <BsFillArchiveFill className='icon'/> Form Apllicants
+                    <BsCardText className='icon'/> Form Apllicants
                 </a>
             </li>
             <li className='sidebar-list-item'>
                 <a href="">
-                    <BsFillGrid3X3GapFill className='icon'/> Categories
+                    < BsFileText  className='icon'/> Our Documents
                 </a>
             </li>
             <li className='sidebar-list-item'>
                 <a href="">
-                    <BsPeopleFill className='icon'/> Networks
+                    <BsPeopleFill className='icon'/> View Networks
                 </a>
             </li>
             <li className='sidebar-list-item'>
@@ -48,6 +48,11 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
             <li className='sidebar-list-item'>
                 <a href="">
                     <BsCalendarFill className='icon'/> Calender
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsPeopleFill  className='icon'/> 3rd Party Management
                 </a>
             </li>
             <li className='sidebar-list-item'>
